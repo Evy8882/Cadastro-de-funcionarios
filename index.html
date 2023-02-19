@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <h1>Cadastro de funcionários</h1>
+    <div>
+        <section>
+                <form id="Lista">
+                    <strong>Lista:</strong><br>
+                    <br>
+                    <select name="Funcionarios" id="funcionarios" size="6" onclick="pickInfo()">
+
+                    </select><br>ID: <span id="idFuncionario"></span>
+                    <br>
+                    <input type="text" placeholder="Email" id="emailInfo" disabled>
+                    <br>
+                    <input type="text" placeholder="Número de telefone" id="telefoneInfo"disabled>
+                    <br>
+                    <input type="number" placeholder="Idade" id="idadeInfo" disabled>
+                    <br>
+                    <input type="text" placeholder="Genêro" id ="generoInfo" disabled>
+                    <br>
+                    <input type="text" placeholder="Setor" id ="setorInfo" disabled>
+                    <br><br>
+                </form>
+                <button onclick="excluir()">Excluir</button>
+            
+                
+        </section>
+        <section>
+            <form id="info">
+                <strong>Informações:</strong><br>
+                <br><label for="nome">Nome:</label><br>
+                <input type="text" placeholder="Nome" id="nome">
+                <br><label for="email">Email:</label><br>
+                <input type="text" placeholder="Email" id="email">
+                <br><label for="telefone">Número de telefone:</label><br>
+                <input type="text" placeholder="Número de telefone" id="telefone">
+                <br><label for="idade">Idade:</label><br>
+                <input type="number" placeholder="Idade" id="idade">
+                <br><label for="genero">Genêro:</label><br>
+                <select name="genero" id="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <br><label for="setor">Setor:</label><br>
+                <select name="setor" id="setor">
+                    <option value="Administrativo">Administrativo</option>
+                    <option value="Financeiro">Financeiro</option>
+                    <option value="Recursos humanos(RH)">Recursos humanos(RH)</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Produção">Produção</option>
+                </select>
+                <br><br>
+                
+            </form>
+            <button onclick="botao()">Cadastrar</button>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

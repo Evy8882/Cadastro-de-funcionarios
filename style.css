@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+    background: rgb(37, 32, 54);
+    color: white;
+    font: normal 10pt arial;
+}
+
+section{
+    background-position-y: 99px;
+    text-align: left;
+    background: rgb(70, 73, 104);
+    color: white;
+    flex-direction: column;
+    display: inline-block;
+    padding: 20px;
+    width: 350px;
+    border-radius: 6px;
+    height: 18rem;
+}
+
+#info{
+    text-align: left;
+}
+
+input, select{
+    background: rgb(163, 163, 163);
+    border-radius: 8px;
+    width: 13rem;
+}
+
+input::placeholder{
+    color: black;
+}
+
+button{
+    background: rgb(74, 84, 167);
+    border-radius: 99px;
+    width: 13rem;
+    transition: 0.5;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+button:hover,
+button:focus{
+    outline: none;
+    background: rgb(21, 21, 255);
+    border-color: black;
+    box-shadow: 0 0 0 0.1125rem rgb(37, 32, 54);
+}
+
+#list{
+    text-align: left;
+}
+
+select:disabled,
+input:disabled{
+    color: black;
+}
